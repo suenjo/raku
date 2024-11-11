@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/move_company
+    username: moveuser
+    password: moveuser123!@#
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
+
+application:
+  jwt:
+    secretKey: d1e7de6c6976969fb2ff10df6ac9d782a897fa9893af8da675be368d9e2b3561
+    expiration: 9000000 # 150? access token
+    refreshExpiration: 86400000 # 1? refresh token
+
+  upload:
+    path: /Users/sueunjo/Documents/upload
+
+
